@@ -35,7 +35,8 @@ The external solver is used only to find candidate certificates in advance. It i
 - Internationalized interface in:
   - French, the default language;
   - English;
-  - Chinese.
+  - Chinese;
+  - Arabic (with right-to-left layout).
 
 The selected language is stored in the browser's `localStorage`.
 
