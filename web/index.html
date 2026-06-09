@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="pageTitle">Certified Puzzle</title>
+  <link rel="stylesheet" href="styles.css?v=20260609-guide-immediate">
+</head>
+<body>
+<main class="app-shell">
+  <header class="hero">
+    <div class="brand-panel">
+      <div class="brand-lockup">
+        <img class="brand-logo" src="assets/certified-puzzle-logo.png" alt="Certified Puzzle logo">
+        <div class="brand-copy"><p class="eyebrow" data-i18n="heroEyebrow"></p><h1 data-i18n="heroTitle"></h1><p class="brand-byline" data-i18n="authorByline"></p></div>
+      </div>
+      <p class="subtitle" data-i18n="heroSubtitle"></p>
+    </div>
+    <div class="hero-tools">
+      <label class="language-picker"><span data-i18n="languageLabel"></span><select id="language"><option value="fr">Français</option><option value="en">English</option><option value="zh">中文</option></select></label>
+      <div id="engineStatus" class="engine-status" data-i18n="engineLoading"></div>
+    </div>
+  </header>
+
+  <section class="control-card">
+    <label><span data-i18n="monthLabel"></span><select id="month"></select></label>
+    <label><span data-i18n="dayLabel"></span><select id="day"></select></label>
+    <button id="solveBtn" class="primary" data-i18n="solveButton"></button>
+  </section>
+
+  <section class="result-layout">
+    <article class="board-card">
+      <div class="board-header"><div><p id="selectedDate" class="date-title" data-i18n="chooseDate"></p><p id="verifyMessage" class="muted" data-i18n="verificationPending"></p></div>
+        <div id="certifiedBadge" class="badge hidden"><span class="badge-check">✓</span><span><strong>CERTIFIED</strong><small data-i18n="certifiedSubtitle"></small></span></div>
+      </div>
+      <div id="board" class="board"></div><div id="legend" class="legend"></div>
+    </article>
+    <aside class="guide-card">
+      <div class="guide-heading"><div><p class="eyebrow" data-i18n="guideEyebrow"></p><h2 data-i18n="guideTitle"></h2></div><span id="stepCounter" class="step-counter">0 / 8</span></div>
+      <div id="guideEmpty" class="guide-empty hidden" data-i18n="guideEmpty"></div>
+      <div id="guideContent"><div id="guidePiecePreview" class="guide-piece-preview"></div><p id="guideInstruction" class="guide-instruction"></p>
+        <button id="guidePlaceBtn" class="guide-place" data-i18n="guidePlaceManual"></button>
+        <div class="guide-actions"><button id="prevBtn" data-i18n="previousButton"></button><button id="nextBtn" class="primary" data-i18n="nextButton"></button></div>
+        <label class="toggle-row"><input id="showFuture" type="checkbox"><span data-i18n="showFuture"></span></label>
+      </div>
+    </aside>
+  </section>
+
+  <section class="manual-card">
+    <div class="manual-heading"><div><p class="eyebrow" data-i18n="manualEyebrow"></p><h2 data-i18n="manualTitle"></h2><p class="manual-intro" data-i18n="manualIntro"></p></div>
+      <div id="manualCertifiedBadge" class="badge hidden"><span class="badge-check">✓</span><span><strong data-i18n="manualCertified"></strong><small data-i18n="manualCertifiedSub"></small></span></div>
+    </div>
+    <div class="manual-layout">
+      <aside class="piece-panel"><h3 data-i18n="pieceTrayTitle"></h3><div id="pieceTray" class="piece-tray"></div>
+        <div class="selection-info"><span data-i18n="selectedPiece"></span>: <strong id="selectedPieceLabel" data-i18n="noneSelected"></strong></div>
+        <div class="manual-controls"><button id="rotateManualBtn" data-i18n="rotatePiece"></button><button id="removeManualBtn" data-i18n="removePiece"></button><button id="resetManualBtn" data-i18n="resetManual"></button></div>
+      </aside>
+      <div class="manual-board-panel"><h3 data-i18n="manualBoardTitle"></h3><div id="manualBoard" class="board manual-board"></div>
+        <div id="manualStatus" class="manual-status" data-i18n="manualReady"></div>
+        <div class="manual-actions"><button id="checkManualBtn" data-i18n="checkManual"></button><button id="suggestBtn" class="primary" data-i18n="suggestNext"></button></div>
+        <div id="suggestionBox" class="suggestion-box hidden"><div id="suggestionPreview" class="suggestion-preview"></div><p id="suggestionText"></p><button id="applySuggestionBtn" data-i18n="applySuggestion"></button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="certificate-card"><div><p class="eyebrow">CERTIFICATE</p><h2 data-i18n="certificateTitle"></h2></div><pre id="certificate"></pre><button id="copyBtn" data-i18n="copyCertificate"></button></section>
+  <footer class="site-footer"><div><strong data-i18n="footerProject"></strong><span data-i18n="footerAuthor"></span></div><div data-i18n="footerTech"></div></footer>
+</main>
+<script src="ocaml_verifier.js"></script><script src="verifier_fallback.js"></script><script src="app.js?v=20260609-guide-immediate"></script>
+</body></html>

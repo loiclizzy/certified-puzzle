@@ -1,0 +1,165 @@
+# Certified Puzzle — repository hygiene
+
+# -----------------------------------------------------------------------------
+# Rocq / Coq compiled artifacts
+# -----------------------------------------------------------------------------
+*.vo
+*.vos
+*.vok
+*.vio
+*.glob
+*.aux
+*.cache
+.coq-native/
+.rocq-native/
+
+# -----------------------------------------------------------------------------
+# OCaml / Dune build artifacts
+# -----------------------------------------------------------------------------
+_build/
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+*.cma
+*.cmxs
+*.annot
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.bc
+*.byte
+*.native
+*.merlin
+.merlin
+
+# Keep this generated browser verifier in Git when deploying the prebuilt web/
+# directory to GitHub Pages. Do NOT add web/ocaml_verifier.js here.
+
+# -----------------------------------------------------------------------------
+# opam and local environment files
+# -----------------------------------------------------------------------------
+_opam/
+.opam-switch/
+*.opam.locked
+.env
+.env.*
+!.env.example
+.direnv/
+
+# -----------------------------------------------------------------------------
+# Python helper artifacts
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# -----------------------------------------------------------------------------
+# Editor / IDE files
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# -----------------------------------------------------------------------------
+# Operating-system metadata
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes/
+
+# -----------------------------------------------------------------------------
+# Logs, temporary files, archives and local previews
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.pid
+*.seed
+*.stackdump
+.cache/
+tmp/
+temp/
+dist/
+coverage/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# -----------------------------------------------------------------------------
+# Local AI-assistant context, prompts, transcripts and scratch files
+# These files are not part of the product source or formal proof.
+# -----------------------------------------------------------------------------
+.ai/
+.ai-context/
+.ai_context/
+ai-context/
+ai_context/
+.chatgpt/
+.openai/
+.claude/
+.cursor/
+.windsurf/
+.continue/
+.copilot/
+.aider*
+
+prompts/
+prompt-history/
+chat-history/
+conversation-exports/
+scratch/
+notes-private/
+
+AI_CONTEXT.md
+AI_CONTEXT.txt
+ai_context.md
+ai_context.txt
+CHATGPT.md
+CLAUDE.local.md
+*.prompt.md
+*.prompts.md
+*_prompt.txt
+*_prompts.txt
+*chat_history*
+*conversation_export*
+
+# -----------------------------------------------------------------------------
+# Local deployment metadata
+# -----------------------------------------------------------------------------
+.netlify/
+.vercel/
+.wrangler/
+.firebase/
+
+# -----------------------------------------------------------------------------
+# Secrets and credentials
+# -----------------------------------------------------------------------------
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+secrets.*

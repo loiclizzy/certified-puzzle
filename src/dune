@@ -1,0 +1,7 @@
+(executable
+ (name verifier_bridge)
+ (modules calendar_verified verifier_bridge)
+ (modes js)
+ (libraries js_of_ocaml)
+ (flags (:standard -w -39 -warn-error -39))
+ (preprocess (pps js_of_ocaml-ppx)))
