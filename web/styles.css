@@ -64,6 +64,46 @@ h2 { margin: 0; font-size: 1.25rem; color: var(--ink); }
 .engine-status { padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,.14); color: white; font-size: .85rem; white-space: nowrap; border: 1px solid rgba(255,255,255,.15); }
 .engine-status.ok { background: var(--accent-soft); color: #155925; border-color: #a8eea1; }
 .engine-status.dev { background: rgba(255, 228, 149, .18); color: #fff1bd; border-color: rgba(255, 228, 149, .24); }
+.theorem-card {
+  margin: 0 0 22px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(138, 169, 242, .42);
+  background: linear-gradient(160deg, rgba(8, 24, 66, .94), rgba(12, 31, 78, .9));
+  box-shadow: 0 14px 30px rgba(3, 12, 36, .28);
+}
+.theorem-label {
+  margin: 0 0 10px;
+  color: #9ab8ff;
+  font-size: .74rem;
+  letter-spacing: .16em;
+  font-weight: 900;
+}
+.rocq-snippet {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(130, 158, 228, .46);
+  background: rgba(5, 16, 42, .86);
+  color: #d6def7;
+  font-family: "Iosevka", "Fira Code", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .9rem;
+  line-height: 1.6;
+  white-space: pre;
+  overflow: auto;
+  max-height: none;
+}
+.rocq-kw {
+  color: #78b8ff;
+  font-weight: 800;
+}
+.rocq-op {
+  color: #b9a4ff;
+  font-weight: 700;
+}
+.rocq-id {
+  color: #ffd694;
+}
 .control-card, .board-card, .guide-card, .certificate-card {
   background: rgba(248, 251, 255, .98);
   border: 1px solid rgba(190, 208, 241, .85);
@@ -110,6 +150,23 @@ select { width: 100%; margin-top: 6px; border: 1px solid var(--line); border-rad
 .certificate-card { margin-top: 22px; padding: 20px; display: grid; grid-template-columns: 190px 1fr auto; gap: 18px; align-items: start; }
 pre { margin: 0; background: #0e2a65; color: #e8fbeb; border-radius: 14px; padding: 16px; overflow: auto; font-size: .78rem; line-height: 1.55; max-height: 280px; }
 .site-footer { display: flex; justify-content: space-between; gap: 16px; margin-top: 20px; color: #e6edff; font-size: .9rem; padding: 0 4px; }
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #e6edff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.github-link:hover,
+.github-link:focus-visible {
+  color: #b6ff9f;
+}
+.github-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 @media (max-width: 900px) {
   .hero { flex-direction: column; }
   .hero-tools { align-items: flex-start; }
