@@ -117,6 +117,46 @@ h2 { margin: 0; font-size: 1.25rem; color: var(--ink); }
   padding: 18px;
   margin-bottom: 22px;
 }
+
+.workflow-card {
+  margin: 0 0 22px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: center;
+  background: rgba(248, 251, 255, .98);
+  border: 1px solid rgba(190, 208, 241, .85);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+.workflow-copy h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.35rem;
+}
+
+.workflow-copy p:last-child {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 8px 0 0;
+}
+
+.workflow-image {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid rgba(190, 208, 241, .85);
+  box-shadow: 0 14px 34px rgba(8, 22, 58, .16);
+  background: #0e2a65;
+}
+
+@media (max-width: 900px) {
+  .workflow-card {
+    grid-template-columns: 1fr;
+  }
+}
 .control-card label { font-size: .8rem; font-weight: 800; color: var(--muted); }
 select { width: 100%; margin-top: 6px; border: 1px solid var(--line); border-radius: 12px; padding: .78rem; background: white; color: var(--ink); }
 .result-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 22px; align-items: start; }
